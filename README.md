@@ -10,8 +10,9 @@
 ```mermaid
 flowchart LR
     A[API / DB] --> B[ingest]
-    B --> C[clean + validate]
-    C --> D[(warehouse)]
+    B --> C["clean + validate"]
+    D[(warehouse)]
+    C --> D
     D --> E[dashboard]
 ```
 
